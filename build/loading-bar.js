@@ -1,7 +1,7 @@
 /*! 
  * angular-loading-bar v0.9.0
  * https://chieffancypants.github.io/angular-loading-bar
- * Copyright (c) 2016 Wes Cruver
+ * Copyright (c) 2019 Wes Cruver
  * License: MIT
  */
 /*
@@ -300,6 +300,7 @@ angular.module('cfp.loadingBar', [])
       function _completeAnimation() {
         status = 0;
         started = false;
+        loadingBar.css('width', 0);
       }
 
       function _complete() {
